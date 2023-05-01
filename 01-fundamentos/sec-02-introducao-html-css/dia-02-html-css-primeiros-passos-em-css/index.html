@@ -5,56 +5,14 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Básico</title>
-    <style>
-
-        h1{
-            text-align: center;
-        }
-        
-        h2 {
-            color: green;
-            font-size: 2em;
-            text-align: center;
-        }
-
-        h3{
-            text-align: center;
-        }
-        
-        body {
-            background-color:rgb(227, 231, 210);
-            font-size: 20px;
-        }
-
-        p {
-            font-family: sans-serif, monospace, fantasy;     
-        }
-
-        #extrint-specie {
-            background-color: rgb(241, 228, 104);
-            color: rgb(0, 0, 0);
-        }
-
-        #description {
-            color:brown ;
-        }
-
-        .topico-style {
-            background-color: rgb(216, 216, 238);
-            font-weight: bold;
-            font-style: italic;
-            line-height: 40px;
-            text-align: center;
-            text-decoration: underline;
-        }
-
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    
 </head>
 <body>
     <h1>Tudo sobre a Sequoia-Gigante</h1>
-        <img src="https://static3.tcdn.com.br/img/img_prod/450860/muda_de_secoia_ou_sequoia_sequoiadendron_giganteum_1314_1_20190611094013.jpg" alt="florenta de sequoias" width="300px">
+        <img id="img-sequoia" src="https://static3.tcdn.com.br/img/img_prod/450860/muda_de_secoia_ou_sequoia_sequoiadendron_giganteum_1314_1_20190611094013.jpg" alt="florenta de sequoias" width="300px">
 
-    <h2 id="description"><strong>Descrição:</strong></h2>
+    <h2 id="description" style="background-color: rgb(241, 228, 104); text-decoration: underline;">Descrição:</h2>
     
         <p>A Sequoia sempervirens é uma árvore perenifólia de grande porte, que pode atingir <strong><em> mais de 100 m de altura</em></strong> no seu habitat natural. A copa tem um formato piramidal quando jovem, tornando-se colunar, de topo achatado e com ramos pendentes na maturidade.
 

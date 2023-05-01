@@ -1,0 +1,44 @@
+h1{
+    text-align: center;
+}
+
+h2 {
+    color: green;
+    font-size: 2em;
+    text-align: center;
+}
+
+h3{
+    text-align: center;
+    text-decoration: underline;
+    color: brown;
+}
+
+body {
+    background-color:rgb(227, 231, 210);
+    font-size: 20px;
+}
+
+p {
+    font-family: sans-serif, monospace, fantasy;     
+}
+
+#extrint-specie {
+    background-color: rgb(241, 228, 104);
+    color: rgb(0, 0, 0);
+}
+
+#description {
+    color:brown ;
+    font-weight: bold;
+}
+
+#img-sequoia
+
+.topico-style {
+    background-color: rgb(216, 216, 238);
+    font-style: italic;
+    line-height: 20px;
+    text-align: center;
+    font-family: monospace;
+}
