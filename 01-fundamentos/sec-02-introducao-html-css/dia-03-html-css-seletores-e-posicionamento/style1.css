@@ -1,14 +1,15 @@
 .super-mario {
-    width: 200px;
-    position: absolute;
-    left: 100px;
-    top: 100px;    
-  }
-  
+  width: 200px;
+  position: absolute;
+  left: 100px;
+  top: 100px;    
+}
+
   .goomba {
     width: 100px;
     position: absolute;
-    
+    top: 200;
+    left: 200;
   }
   
   .baloon {
