@@ -1,0 +1,71 @@
+div:hover {
+    border: 6px solid black;
+    
+}
+
+#primaria {
+    background-color: rgb(133, 133, 245);
+    text-align: center;
+    text-decoration: underline;
+}
+
+#secundaria {
+    background-color: rgb(155, 45, 155);
+    text-align: end;
+    text-decoration: line-through;
+    color: white;
+    font-family: sans-serif;
+}
+
+#complementar {
+    background-color: rgb(223, 223, 105);
+    text-align: left;
+    text-decoration: overline;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: italic;
+}
+
+#escura {
+    background-color: rgb(158, 52, 52);
+    text-align: center;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    
+}
+
+#clara {
+    background-color: darkgray;
+    text-align: right;
+    font-size: 2em;
+    font-family: monospace;
+}
+
+
+  /* Estilize cada uma das tags <h3>. */
+  /* Aqui estamos pegando a primeira div e o primeiro h3 */
+  div:nth-of-type(1) > h3 {
+    color: purple;
+  }
+  /*Aqui estamos pegando a segunda div e o primeiro h3 e assim por diante nas próximas div */
+ 
+  div:nth-of-type(2) > h3 {
+    color: rgb(14, 36, 160) 
+  }
+  div:nth-of-type(3) > h3 {
+    font-size: 20px;
+  }
+  div:nth-of-type(4) > h3 {
+    font-family: monospace;
+  }
+  div:nth-of-type(5) > h3 {
+    font-style: italic
+  }
+  /* Faça a terceira div ser maior que as demais. */
+  div:nth-of-type(3) {
+    height: 100px;
+  }
+  /* Deixe as tags ímpares <h3> com o texto em itálico. */
+  div:nth-child(odd) h3 {
+    font-style: italic
+  }

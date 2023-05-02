@@ -31,13 +31,13 @@ Nesse arquivo .css, adicione os estilos para que:
 -No ‘style.css’, adicione a propriedade ‘list-style: none’ para ambas as listas (X)
 <br>
 <br><br>
--Estilize as divs para que, ao passar o cursor por cima das mesmas, elas ganhem uma borda ()
+-Estilize as divs para que, ao passar o cursor por cima das mesmas, elas ganhem uma borda (X) REFORÇAR
 <br>
--Faça cada div ter uma cor de fundo própria ()
+-Faça cada div ter uma cor de fundo própria (x)
 <br>
--Estilize cada uma das tags h3 da maneira que achar melhor (cor, tamanho, estilo e família) ()
+-Estilize cada uma das tags h3 da maneira que achar melhor (cor, tamanho, estilo e família) (X)
 <br>
--Faça a terceira div ser maior que as demais ()
+-Faça a terceira div ser maior que as demais (X) REFORÇA
 <br>
--Deixe as tags ímpares h3 com o texto em itálico ()
+-Deixe as tags ímpares h3 com o texto em itálico (X) REFORÇA
 <br>
