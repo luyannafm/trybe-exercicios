@@ -1,6 +1,6 @@
 //1 - Elabore alguns códigos e imprima o resultado no console usando o console.log, um para cada operação aritmética básica. Seu código deve ter duas variáveis, a e b, definidas no começo com os valores que serão operados. Escreva códigos para:
 
-let a = 3;
+/*let a = 3;
 let b = 7;
 
 let adicao = a + b;
@@ -11,7 +11,7 @@ let divisao = a % b;
 console.log(adicao);
 console.log(subtracao);
 console.log(multiplicacao);
-console.log(divisao);
+console.log(divisao);*/
 
 /*let a = 10;
 let b = 5;
@@ -25,49 +25,71 @@ console.log('Módulo: ' + (a % b)); */
 
 //2 - Utilize if/else para escrever um código que retorne o maior de dois números. Defina, no começo do seu código, duas variáveis com os valores que serão comparados.
 
-if(a > b) {
+/*if(a > b) {
     console.log("'a' é maior que 'b'");
 }else {
     console.log("'b' é maior que 'a'");
-};
-
-
-
-
+}; */
 
 
 //3 - Utilize if/else para escrever um código que retorne o maior de três números. Defina, no começo do seu código, três variáveis com os valores que serão comparados.
 
+/*let a = 2;
+let b = 5;
+let c = 10;
 
+if (a > b && a > c){
+    console.log("A é o maior dos tres: " + a);
+}else if (b > a && b > c){
+    console.log("B é o maior dos tres: " + b);
+}else (c > a && c > b)
+    console.log("C é o maior dos tres: " + c);*/
 
-
-
-
+    /*let a = 6;
+    let b = 4;
+    let c = 2;
+    
+    if (a > b && a > c) {
+      console.log('O maior número é: ' + a + ' (a)');
+    } else if (b > a && b > c) {
+      console.log('O maior número é: ' + b + ' (b)');
+    } else {
+      console.log('O maior número é: ' + c + ' (c)');
+    };*/
 
 
 //4 - Utilize if/else para escrever um código que, dado um valor recebido como parâmetro, retorne: “positive”, se esse valor for positivo; “negative”, se esse valor for negativo, e “zero”, caso esse valor não seja nem positivo nem negativo.
 
+/*let valor = -4;
 
-
-
-
-
-
-
-
-
-
+if (valor >= 1){
+    console.log('positivo');
+}else if(valor <= -1){
+    console.log('negativo');
+} else {
+    console.log('zero');
+} */
+    
 
 //5 - 🚀 Utilize if/else para escrever um código que defina três variáveis com os valores dos três ângulos internos de um triângulo. Retorne true se os ângulos representarem os ângulos de um triângulo e false, caso contrário. Se algum ângulo for inválido, você deve retornar uma mensagem de erro.
 //Para os ângulos serem de um triângulo válido, a soma dos três deve ser 180 graus.
 //Um ângulo será considerado inválido se não tiver um valor positivo.
 
+/*let a = 65;
+let b = 100;
+let c = 15;
 
+let angulosValidos = a > 0 && b > 0 && c > 0;
 
-
-
-
-
+if(angulosValidos){
+    if (a + b + c === 180){
+console.log(true);
+}else {
+    console.log(false);
+};
+}else {
+    console.log('ERRO: ângulo inválido');
+}*/
 
 
 //6 - Utilize switch/case para escrever um código que receba o nome de uma peça de xadrez e retorne os movimentos que ela pode fazer.
@@ -76,19 +98,30 @@ if(a > b) {
 //Se a peça passada for inválida, o código deve retornar uma mensagem de erro.
 //Exemplo: bishop (bispo) -> diagonals (diagonais)
 
+/*let peças = 'CAVALO';
 
-
-
-
-
-
-
-
-
-
-
-
-
+switch(peças.toLocaleLowerCase()){
+    case 'rei': 
+        console.log('Vertical(apenas uma casa por vez)\nHorizontal(apenas uma casa por vez)\nDiagonal(apenas uma casa por vez)');
+        break
+    case 'rainha':
+        console.log('Vertical\nHorizontal\nDiagonal');
+        break
+    case 'cavalo': 
+        console.log('Movimento L(duas casas na horizontal e uma na vertical, ou duas na vertical e uma na horizontal, uma na horizontal e duas na vertical, e assim por diante.)');
+        break
+    case 'peão':
+        console.log('Vertical(apenas para frente)\nDiagonal(apenas para capturar uma peça)');
+        break
+    case 'torre': 
+        console.log('Vertical\nHorizontal');
+        break
+    case 'bispo':
+        console.log('Diagonal');
+        break
+    default:
+        console.log('Não é uma peça do Xadrez');
+}*/
 
 
 //7 - Utilize if/else para escrever um código que converta uma nota dada em porcentagem (de 0 a 100) em conceitos de A a F. Siga as seguintes regras:
