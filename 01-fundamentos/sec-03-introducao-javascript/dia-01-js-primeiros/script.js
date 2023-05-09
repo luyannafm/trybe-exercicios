@@ -133,6 +133,23 @@ switch(peças.toLocaleLowerCase()){
 // Porcentagem < 50 -> F
 // O código deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
 
+function converterNotas(nota) {
+    if(nota < 0 || nota > 100){
+        return 'Nota inválida';
+    }   else if (nota >= 90){
+        return 'A';
+    }   else if (nota >= 80){
+        return 'B';
+    }   else if (nota >= 70){
+        return 'C';
+    }   else if (nota >= 60) {
+        return 'D';
+    }   else if (nota >= 50){
+        return 'E';
+    }   else {
+        return 'F';
+        }       
+    }
 
 
 
