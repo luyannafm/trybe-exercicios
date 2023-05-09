@@ -133,7 +133,7 @@ switch(peças.toLocaleLowerCase()){
 // Porcentagem < 50 -> F
 // O código deve retornar uma mensagem de erro e encerrar se a nota passada for menor que 0 ou maior que 100.
 
-function converterNotas(nota) {
+/*function converterNotas(nota) {
     if(nota < 0 || nota > 100){
         return 'Nota inválida';
     }   else if (nota >= 90){
@@ -149,39 +149,39 @@ function converterNotas(nota) {
     }   else {
         return 'F';
         }       
-    }
+    }*/
 
-
-
-
-
-
-
-
-
-
-
-
-
+    //console.log(converterNotas(85));
+    //console.log(converterNotas(47));
+    //console.log(converterNotas(-10));
+    //console.log(converterNotas(120));
+   
 
 // 🚀 Há um par entre nós
 // 8 - Utilize if/else para escrever um código que defina três números em variáveis e retorne true se pelo menos uma das três for par. Caso contrário, o código deve retornar false.
-// Bônus: use somente um if.
 
+/*let number1 = 3;
+let number2 = 5;
+let number3 = 8;
 
-
-
-
-
+if (number1 % 2 === 0 || number2 %2 === 0 || number3 % 2 === 0){
+    console.log(true);
+} else {
+    console.log(false);
+}*/
 
 
 // 9 - Utilize if/else para escrever um código que defina três números em variáveis e retorne true se pelo menos uma das três for ímpar. Caso contrário, o código deve retornar false.
-// Bônus: use somente um if.
 
+/*let num1 = 3;
+let num2 = 10;
+let num3 = 12;
 
-
-
-
+if (num1 % 2 !== 0 || num2 % 2 !== 0 || num3 % 2 !== 0){
+    console.log(true);
+}else {
+    console.log(false);
+}*/
 
 
 /* 10 - Utilize if/else para escrever um código que se inicie com dois valores em duas variáveis diferentes: o custo de um produto e seu valor de venda. A partir dos valores, o código deve calcular o lucro (ou seja, o valor de venda menos o custo do produto) da empresa ao vender mil produtos.
@@ -192,11 +192,19 @@ function converterNotas(nota) {
         --> valorCustoTotal = valorCusto + impostoSobreOCusto;
         --> lucro = valorVenda - valorCustoTotal (lucro de um produto);*/
 
+let custo = 100;
+let venda = 150;
 
 
-
-
-
+if (custo >= 0 && venda >= 0){
+    let impostoCusto = custo * 0.2;
+    let custoTotal = custo + impostoCusto;
+    let lucroProduto = venda - custoTotal;
+    let lucroTotal = lucroProduto * 1000;
+    console.log(lucroTotal);
+} else {
+    console.log('Erro: valor inválido');
+}
 
 
 /* 11 - Utilize if/else para escrever um código que, dado um salário bruto, calcule o salário líquido a ser recebido.
