@@ -97,29 +97,63 @@ let word = 'tryber';
 let reverse = '';
 
 for (let index = 0; index < word.length; index +=1) {
-    reverse += word
-}
+    reverse += word[word.length - 1 -index];
+} 
+console.log(reverse);
+
+//outra possivel solução
+
+/*let word = 'tryber';
+let reverseWord = '';
+
+reverseWord = word.split('').reverse().join('');
+
+console.log(reverseWord);*/
 
 
-
-
-
-/*Considere o array de strings abaixo:
-let array = ['java', 'javascript', 'python', 'html', 'css'];
- */
+/*Considere o array de strings abaixo:*/
+let array1 = ['java', 'javascript', 'python', 'html', 'css'];
+ 
 //Utilize a estrutura de repetição for para escrever dois algoritmos: um que imprima no console a maior palavra desse array e outro que imprima a menor. Considere o número de caracteres de cada palavra.
 
+let bigWord = array1[0];
+let smallerWord = array1[0];
 
+for (let i = 0; i < array1.length; i += 1) {
+    if (array1[i].length > bigWord.length) {
+        bigWord = array1[i];
+    }
+}
 
+console.log(bigWord);
 
+for (let i = 0; i < array1.length; i += 1) {
+    if (array1[i].length < smallerWord.length) {
+        smallerWord = array1[i];
+    }
+}
+
+console.log(smallerWord);
 //Um número primo é um número inteiro maior que 1 que possui somente dois divisores, ou seja, é divisível por 1 e por ele mesmo. Sabendo disso, escreva um algoritmo que imprima no console o maior número primo entre 2 e 50.
+let biggestPrimo = 0;
 
+for (let atualNumber = 2; atualNumber <= 50; atualNumber += 1) {
+    let primo = true;
+    for (let divisor = 2; divisor < atualNumber; divisor += 1) {
+        if (divisor % atualNumber === 0){
+            primo = false;
+        }
+    }
+    if (primo) {
+        biggestPrimo = atualNumber;
+    }
+}
 
+console.log(biggestPrimo);
 
 
 
 /* EXERCICIOS MONITORIA NAT 
-
 // 1.REALIZE a soma de um array e faça verificação se os elementos são númeiros
 const array = [1, 'leo', 6, 'lari', 7, 8, 'thedy', 9, 41, 25, 2]
 //console.log(array.length);
@@ -136,7 +170,6 @@ console.log(resultado);
 const nome = ['luy', 'leo', 're', 'michael'];
 const sobrenome = ['moraes', 'rocha', 'rodrigues', 'fernandes'];
 const arrayVazio = [];
-
 for (let index = 0; index < nome.length; index +=1) {
 //console.log('eu passei aqui nesse 1 loop', nome[index]); 
 for (let index1 = 0; index1 < sobrenome.length; index1 +=1) {
@@ -146,19 +179,16 @@ for (let index1 = 0; index1 < sobrenome.length; index1 +=1) {
 console.log(arrayVazio);
 
 
-
-
-
 // 3. Encontre o menor elemento de um array.
 // DESCOBRIR O ERRO
 const nume = [10, 3, 4, 6, 7, 8, 0, 23]
 const smaller = nume[0];
-
 for (let index = 0; index < nume.length; index +=1) {
     if(smaller > nume[index]){
         smaller = nume [index]
     }
 }
 console.log(smaller);
+
 
 /* 4. Laker e Boston Celtics es~tao disputando o título da NBA. Desenvolva a lógica para receber um array de cada time contendo a pontuação das partidas. A saída deve apresentar qual time ganhou mais partidas e foi campeão*/
